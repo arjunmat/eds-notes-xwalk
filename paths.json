@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/arjunssandbox/:/",
-    "/content/arjunssandbox/configuration:/.helix/config.json",
-    "/content/arjunssandbox/metadata:/metadata.json"
+    "/content/eds-notes-xwalk/:/",
+    "/content/eds-notes-xwalk/configuration:/.helix/config.json",
+    "/content/eds-notes-xwalk/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/arjunssandbox/"
+    "/content/eds-notes-xwalk/"
   ]
 }
