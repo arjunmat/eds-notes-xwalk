@@ -16,13 +16,20 @@
       "cards",
       "columns",
       "fragment",
-      "quote"
+      "quote",
+      "offer-card-container"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "offer-card-container",
+    "components": [
+      "offer-card"
     ]
   },
   {
@@ -37,8 +44,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "offer-card"
+      "title"
     ]
   }
 ]

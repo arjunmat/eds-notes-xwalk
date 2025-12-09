@@ -257,6 +257,16 @@
      ]
   },
   {
+    "id": "offer-card-container",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      }
+    ]
+  },
+  {
     "id": "offer-card",
     "fields": [
       {
