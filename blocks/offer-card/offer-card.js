@@ -3,6 +3,7 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   const [offerCardWrapper] = block.children;
+  console.log("offer card wrapper", offerCardWrapper);
   
   // Create the main card item container
   const offerCardItem = document.createElement('div');
