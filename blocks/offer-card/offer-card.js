@@ -2,12 +2,12 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
   // The block should contain the offer card content
-  // Structure: image, tag, title, description, CTA
+  // Expected structure: image, tag, title, description, CTA, (optional empty)
   
   const elements = [...block.children];
   
-  elements.forEach((element) => {
-    // Handle images
+  elements.forEach((element, index) => {
+    // Handle images (typically first element)
     const picture = element.querySelector('picture');
     if (picture) {
       const img = picture.querySelector('img');
@@ -16,14 +16,31 @@ export default function decorate(block) {
         picture.replaceWith(optimizedPic);
       }
       element.classList.add('offer-card__image');
-    } else {
-      // Add appropriate classes based on content
-      const content = element.textContent.trim();
-      if (content) {
-        // This could be tag, title, description, or CTA
-        // Classes will be applied based on the structure
-        element.classList.add('offer-card__content');
-      }
+      return;
+    }
+    
+    // Check if element has a link (CTA)
+    const link = element.querySelector('a');
+    if (link) {
+      element.classList.add('offer-card__cta');
+      return;
+    }
+    
+    // Check content
+    const content = element.textContent.trim();
+    if (!content) {
+      // Empty element, can be removed or ignored
+      return;
+    }
+    
+    // Assign classes based on position and content length
+    // Assuming structure: image (0), tag (1), title (2), description (3), CTA (4)
+    if (index === 1) {
+      element.classList.add('offer-card__tag');
+    } else if (index === 2) {
+      element.classList.add('offer-card__title');
+    } else if (index === 3) {
+      element.classList.add('offer-card__description');
     }
   });
 }
