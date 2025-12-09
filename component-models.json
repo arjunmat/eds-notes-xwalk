@@ -260,9 +260,10 @@
     "id": "offer-card-container",
     "fields": [
       {
-        "component": "text",
+        "component": "richtext",
         "name": "title",
-        "label": "Title"
+        "label": "Title",
+        "value": ""
       }
     ]
   },
