@@ -264,37 +264,42 @@
         "valueType": "string",
         "name": "offerImage",
         "label": "Image",
-        "multi": false
+        "multi": false,
+        "value": "https://via.placeholder.com/150"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "offerImageAlt",
-        "label": "Image Alt Text"
+        "label": "Image Alt Text",
+        "value": "Offer Image Alt Text"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "offerTag",
-        "label": "Tag"
+        "label": "Tag",
+        "value": "Mobile"
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "offerTitle",
-        "label": "Title"
+        "label": "Title",
+        "value": "Offer Title"
       },
       {
         "component": "richtext",
         "name": "offerDescription",
-        "value": "",
+        "value": "This is a long description of the offer",
         "label": "Description",
         "valueType": "string"
       },
       {
         "component": "aem-content",
         "name": "offerLink",
-        "label": "Offer Link"
+        "label": "Offer Link",
+        "value": "https://example.com/offers"
       },
       {
         "component": "text",
