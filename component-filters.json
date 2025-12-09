@@ -28,7 +28,8 @@
   {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "offer-card"
     ]
   },
   {
@@ -38,6 +39,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "offer-card",
+    "components": [
+      "offer-card-item"
     ]
   }
 ]
