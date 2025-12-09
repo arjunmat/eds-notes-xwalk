@@ -2,6 +2,7 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
+  block.classList.add('offer-card--main-wrapper');
   const [offerCardWrapper] = block.children;
   console.log("offer card wrapper", offerCardWrapper);
   
