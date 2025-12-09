@@ -1,0 +1,112 @@
+{
+  "definitions": [
+    {
+      "title": "Offer Card Container",
+      "id": "offer-card-container",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Offer Card Container",
+              "model": "offer-card-container",
+              "filter": "offer-card-container",
+              "title": "<h3>Our Offers</h3>"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Offer Card",
+      "id": "offer-card",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Offer Card",
+              "model": "offer-card"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "offer-card-container",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "title",
+          "label": "Title",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "offer-card",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "offerImage",
+          "label": "Image",
+          "multi": false,
+          "value": "https://via.placeholder.com/150"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "offerImageAlt",
+          "label": "Image Alt Text",
+          "value": "Offer Image Alt Text"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "offerTag",
+          "label": "Tag",
+          "value": "Mobile"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "offerTitle",
+          "label": "Title",
+          "value": "Offer Title"
+        },
+        {
+          "component": "richtext",
+          "name": "offerDescription",
+          "value": "This is a long description of the offer",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "offerLink",
+          "label": "Offer Link",
+          "value": "https://example.com/offers"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "offerCtaText",
+          "label": "Offer CTA Text",
+          "value": "Buy Now"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "offer-card-container",
+      "components": [
+        "offer-card"
+      ]
+    }
+  ]
+}
+

@@ -184,6 +184,7 @@
                 "template": {
                   "name": "Offer Card Container",
                   "model": "offer-card-container",
+                  "filter": "offer-card-container",
                   "title": "<h3>Our Offers</h3>"
                 }
               }
