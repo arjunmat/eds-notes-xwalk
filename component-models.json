@@ -257,51 +257,51 @@
      ]
   },
   {
-    "id": "offer-card-item",
+    "id": "offer-card",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "offerImage",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "offerImageAlt",
         "label": "Image Alt Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "tag",
+        "name": "offerTag",
         "label": "Tag"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "title",
+        "name": "offerTitle",
         "label": "Title"
       },
       {
         "component": "richtext",
-        "name": "description",
+        "name": "offerDescription",
         "value": "",
         "label": "Description",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "ctaLink",
-        "label": "CTA Link"
+        "name": "offerLink",
+        "label": "Offer Link"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "ctaText",
-        "label": "CTA Text",
-        "value": "Learn more"
+        "name": "offerCtaText",
+        "label": "Offer CTA Text",
+        "value": "Buy Now"
       }
     ]
   }
