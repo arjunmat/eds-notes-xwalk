@@ -1,12 +1,13 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
+  console.log('offer-card', block);
   // The block should contain the offer card content
   // Expected structure: image, tag, title, description, CTA, (optional empty)
   
   const elements = [...block.children];
-  
   elements.forEach((element, index) => {
+    debugger;
     // Handle images (typically first element)
     const picture = element.querySelector('picture');
     if (picture) {
